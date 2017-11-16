@@ -69,10 +69,11 @@ class Catalog
         $dir = config('1c_ut_exchange.import_dir', '1c_exchange');
         $storage = \Storage::disk($disk);
 
-        if($storage->exists($dir))
-            $storage->deleteDirectory($dir);
+        #if($storage->exists($dir))
+        #    $storage->deleteDirectory($dir);
 
-        $storage->makeDirectory($dir);
+        if(!$storage->exists($dir))
+            $storage->makeDirectory($dir);
 
         $response = "zip=".($zip_enable ? "yes": "no")."\n";
         $response .= "file_limit=".$file_part;

@@ -2,7 +2,7 @@
     "name": "domatskiy/laravel-exchange1c",
     "type": "library",
     "description": "Loader from 1c - CommerceML",
-    "keywords": ["1c", "CommerceML"],
+    "keywords": ["1c", "CommerceML", "laravel"],
     "homepage": "https://github.com/domatskiy",
     "license": "MIT",
     "authors": [
